@@ -38,10 +38,3 @@ const setupInput = function(conn) {
 module.exports = {
   setupInput
 };
-
-// conn.on('connect', (data) => {
-  //   setTimeout(() => {
-  //     conn.write("Move: up");
-  //   }, 2000);
-    
-  // });
