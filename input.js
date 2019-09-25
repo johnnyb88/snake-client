@@ -18,6 +18,9 @@ const handleUserInput = function(data) {
   if (data === 'd') {
     connection.write("Move: right");
   }
+  if (data === 'i') {
+    connection.write("Say: comin for U!");
+  }
 };
 
 const setupInput = function(conn) {
