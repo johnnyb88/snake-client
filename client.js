@@ -7,14 +7,22 @@ const connect = function() {
   });
   // interpret incoming data as text
   conn.setEncoding('utf8');
+
   conn.on('data', (data) => {
     console.log("you ded cuz you idled.", data);
-
   });
-  conn.on('connect', () => {
+  conn.on('connect', (data) => {
     console.log("connection successfully established");
     conn.write('Name: JON');
+    
   });
+  // conn.on('connect', (data) => {
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 2000);
+    
+  // });
+
   return conn;
 };
 
